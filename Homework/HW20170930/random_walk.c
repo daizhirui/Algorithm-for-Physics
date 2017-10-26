@@ -2,9 +2,11 @@
  * File name: random_walk.c
  * Author: Zhirui Dai (Astro)
  * Date created: 2017-09-30
- * Last modified: 2017-10-02
+ * Last modified: 2017-10-20
  * Description: The program is to simulate random walk and try to 
  *      find out the relation between time and the square of distance.
+ * History:
+ * 2017-10-20: correct malloc using method.
  * ------------------------------------------------------------ */
 #include <stdio.h>
 #include <unistd.h>
@@ -180,6 +182,10 @@ int main(int argc, char *argv[])
     if (repeat > 1)
     {
         ave_buffer = (double *)malloc(sizeof(double) * nStep); //> create a buffer to store the average.
+        if (ave_buffer == NULL){
+            printf("Fail to initialize the memory space, please free your memory in advance!\n");
+            return STATUS_MEMORY_ERROR;
+        }
         for (count = 0; count < nStep; count++)
             ave_buffer[count] = 0.0; //> Initialize the buffer.
     }
