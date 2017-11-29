@@ -1,0 +1,12 @@
+{
+	"age" : 18,
+	"like" : 
+	[
+		{
+			"book" : "c++",
+			"food" : "apple",
+			"music" : "ddx"
+		}
+	],
+	"name" : "dsw"
+}

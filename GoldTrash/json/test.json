@@ -1,0 +1,23 @@
+{
+    "employees": [
+        {
+            "firstName": "John",
+            "lastName": "Doe"
+        },
+        {
+            "firstName": "Anna",
+            "lastName": "Smith"
+        },
+        {
+            "firstName": "Peter",
+            "lastName": "Jones"
+        }
+    ],
+    "123": {
+        "ABC": 1,
+        "ABCD": 2
+    },
+    "name": "astro",
+    "age": 20,
+    "job":"student"
+}
