@@ -28,7 +28,7 @@
  */
 void usage()
 {
-    printf("Usage: monte_carlo_walk [");
+    printf("Usage: monte_carlo_walk\n");
     printf("\t-h\tPrint this usage.\n");
     printf("\t-l\tTo setup the length of the simulation, default 0.5\n");
     printf("\t-n\tTo setup the length of the simulation, default 1000\n");
