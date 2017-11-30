@@ -52,10 +52,10 @@ public:
     double modulus() const;
     void set_modulus(const double&);
 
-    double dot_plus(const MyVector&) const;
-    static double dot_plus(const MyVector&, const MyVector&);
-    MyVector cross_plus(const MyVector&) const;
-    static MyVector cross_plus(const MyVector&, const MyVector&);
+    double dot(const MyVector&) const;
+    static double dot(const MyVector&, const MyVector&);
+    MyVector cross(const MyVector&) const;
+    static MyVector cross(const MyVector&, const MyVector&);
     double angleBetween(const MyVector&) const;
     static double angleBetween(const MyVector&, const MyVector&);
     double dist(const MyVector&) const;

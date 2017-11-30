@@ -260,7 +260,7 @@ void MyVector::set_modulus(const double& v)
     *this *= v;
 }
 
-double MyVector::dot_plus(const MyVector& v) const
+double MyVector::dot(const MyVector& v) const
 {
     if(_nDim == v._nDim)
     {
@@ -271,12 +271,12 @@ double MyVector::dot_plus(const MyVector& v) const
     }
     else
     {
-        cout << "MyVector::dot_plus Error: the dimension of two vectors is different\n";
+        cout << "MyVector::dot Error: the dimension of two vectors is different\n";
         exit(-1);
     }
 }
 
-double MyVector::dot_plus(const MyVector& v1, const MyVector& v2)
+double MyVector::dot(const MyVector& v1, const MyVector& v2)
 {
     if(v1._nDim == v2._nDim)
     {
@@ -287,12 +287,12 @@ double MyVector::dot_plus(const MyVector& v1, const MyVector& v2)
     }
     else
     {
-        cout << "MyVector::dot_plus Error: the dimension of two vectors is different\n";
+        cout << "MyVector::dot Error: the dimension of two vectors is different\n";
         exit(-1);
     }
 }
 
-MyVector MyVector::cross_plus(const MyVector& v) const
+MyVector MyVector::cross(const MyVector& v) const
 {
     if(this->_nDim == 3 && v._nDim == 3)
     {
@@ -304,18 +304,18 @@ MyVector MyVector::cross_plus(const MyVector& v) const
     }
     else
     {
-        cout << "MyVector::cross_plus Error: the dimension of vectors should be 3\n";
+        cout << "MyVector::cross Error: the dimension of vectors should be 3\n";
         exit(-1);
     }
 }
 
-MyVector MyVector::cross_plus(const MyVector& v1, const MyVector& v2)
+MyVector MyVector::cross(const MyVector& v1, const MyVector& v2)
 {
     if(v1._nDim == 3 && v2._nDim == 3)
-        return v1.cross_plus(v2);
+        return v1.cross(v2);
     else
     {
-        cout << "MyVector::cross_plus Error: the dimension of vectors should be 3\n";
+        cout << "MyVector::cross Error: the dimension of vectors should be 3\n";
         exit(-1);
     }
 }
@@ -323,7 +323,7 @@ MyVector MyVector::cross_plus(const MyVector& v1, const MyVector& v2)
 double MyVector::angleBetween(const MyVector& v) const
 {
     double result = 0;
-    result = this->dot_plus(v) / (this->modulus() * v.modulus());
+    result = this->dot(v) / (this->modulus() * v.modulus());
     return acos(result);
 }
 

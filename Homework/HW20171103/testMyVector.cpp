@@ -130,30 +130,30 @@ int main()
     printInfo("vector1.modulus() = ",vector1.modulus());
     printInfo("");
 
-    //Test dot_plus cross_plus
-    printInfo("###### Test dot_plus and cross_plus ######");
+    //Test dot cross
+    printInfo("###### Test dot and cross ######");
     vector1.set_position(vector0);
     printInfo("\t vector1 = ",vector1);
     printInfo("\t vector2 = ",vector2);
-    printInfo("vector1.dot_plus(vector2) = ",vector1.dot_plus(vector2));
-    printInfo("vector2.dot_plus(vector1) = ",vector2.dot_plus(vector1));
-    printInfo("vector1.dot_plus(vector1) = ",vector1.dot_plus(vector1));
-    printInfo("dot_plus(vector1, vector2) = ", MyVector::dot_plus(vector1, vector2));
-    printInfo("dot_plus(vector2, vector1) = ", MyVector::dot_plus(vector2, vector1));
-    printInfo("dot_plus(vector1, vector1) = ", MyVector::dot_plus(vector1, vector1));
-    printInfo("vector1.cross_plus(vector2) = ",vector1.cross_plus(vector2));
-    printInfo("vector2.cross_plus(vector1) = ",vector2.cross_plus(vector1));
-    printInfo("vector1.cross_plus(vector1) = ",vector1.cross_plus(vector1));
-    printInfo("cross_plus(vector1, vector2) = ", MyVector::cross_plus(vector1, vector2));
-    printInfo("cross_plus(vector2, vector1) = ", MyVector::cross_plus(vector2, vector1));
-    printInfo("cross_plus(vector1, vector1) = ", MyVector::cross_plus(vector1, vector1));
+    printInfo("vector1.dot(vector2) = ",vector1.dot(vector2));
+    printInfo("vector2.dot(vector1) = ",vector2.dot(vector1));
+    printInfo("vector1.dot(vector1) = ",vector1.dot(vector1));
+    printInfo("dot(vector1, vector2) = ", MyVector::dot(vector1, vector2));
+    printInfo("dot(vector2, vector1) = ", MyVector::dot(vector2, vector1));
+    printInfo("dot(vector1, vector1) = ", MyVector::dot(vector1, vector1));
+    printInfo("vector1.cross(vector2) = ",vector1.cross(vector2));
+    printInfo("vector2.cross(vector1) = ",vector2.cross(vector1));
+    printInfo("vector1.cross(vector1) = ",vector1.cross(vector1));
+    printInfo("cross(vector1, vector2) = ", MyVector::cross(vector1, vector2));
+    printInfo("cross(vector2, vector1) = ", MyVector::cross(vector2, vector1));
+    printInfo("cross(vector1, vector1) = ", MyVector::cross(vector1, vector1));
     printInfo("");
 
     //Test angleBetween dist
     printInfo("###### Test angleBetween and dist ######");
     printInfo("\t vector1 = ",vector1);
     printInfo("\t vector2 = ",vector2);
-    vector3 = vector1.cross_plus(vector2);
+    vector3 = vector1.cross(vector2);
     printInfo("\t vector3 = vector1 x vector2 ",vector3);
     printInfo("vector1.angleBetween(vector3) = ", vector1.angleBetween(vector3));
     printInfo("vector3.angleBetween(vector1) = ", vector3.angleBetween(vector1));

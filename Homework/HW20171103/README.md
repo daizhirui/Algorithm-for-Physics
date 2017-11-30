@@ -19,7 +19,7 @@ make cleanall   # clean *.a *.o and the exec bin
 - 2017-11-03
     - first release, basic functions completed
 - 2017-11-10
-    - add operator[], dot_plus, cross_plus
+    - add operator[], dot, cross
 - 2017-11-17
     - add angleBetween, dist, random_vector
 - 2017-11-18
@@ -32,6 +32,8 @@ make cleanall   # clean *.a *.o and the exec bin
 - 2017-11-27
     - update the makefile
     - project completed, upload to the server
+- 2017-11-30
+    - correct the name of dot() and cross()
 
 ## Member functions
 
@@ -90,10 +92,10 @@ MyVector MyVector::normalize() const;
 void MyVector::normalized();
 double MyVector::modulus() const;
 void MyVector::set_modulus(const double&);
-double MyVector::dot_plus(const MyVector&) const;
-static double MyVector::dot_plus(const MyVector&, const MyVector&);
-MyVector MyVector::cross_plus(const MyVector&) const;
-static MyVector::MyVector cross_plus(const MyVector&, const MyVector&);
+double MyVector::dot(const MyVector&) const;
+static double MyVector::dot(const MyVector&, const MyVector&);
+MyVector MyVector::cross(const MyVector&) const;
+static MyVector::MyVector cross(const MyVector&, const MyVector&);
 double MyVector::angleBetween(const MyVector&) const;
 static double MyVector::angleBetween(const MyVector&, const MyVector&);
 double MyVector::dist(const MyVector&) const;
