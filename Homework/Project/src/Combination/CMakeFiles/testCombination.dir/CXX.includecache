@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/daizhirui/Documents/Developments/Algorithm-for-Physics/Homework/Project/src/Combination/Combination.h
+vector
+-
+
+/Users/daizhirui/Documents/Developments/Algorithm-for-Physics/Homework/Project/src/Combination/testCombination.cpp
+iostream
+-
+Combination.h
+/Users/daizhirui/Documents/Developments/Algorithm-for-Physics/Homework/Project/src/Combination/Combination.h
+

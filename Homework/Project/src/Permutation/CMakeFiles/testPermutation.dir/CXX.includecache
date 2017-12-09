@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/daizhirui/Documents/Developments/Algorithm-for-Physics/Homework/Project/src/Permutation/Permutation.h
+vector
+-
+
+/Users/daizhirui/Documents/Developments/Algorithm-for-Physics/Homework/Project/src/Permutation/testPermutation.cpp
+iostream
+-
+Permutation.h
+/Users/daizhirui/Documents/Developments/Algorithm-for-Physics/Homework/Project/src/Permutation/Permutation.h
+

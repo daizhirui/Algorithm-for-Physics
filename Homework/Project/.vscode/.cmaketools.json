@@ -1,0 +1,28 @@
+{
+  "variant": {
+    "label": "Debug",
+    "keywordSettings": {
+      "buildType": "debug"
+    },
+    "description": "Emit debug information without performing optimizations"
+  },
+  "activeEnvironments": [],
+  "codeModel": {
+    "configurations": [
+      {
+        "name": "Debug",
+        "projects": [
+          {
+            "buildDirectory": "/Users/daizhirui/Documents/Developments/Algorithm-for-Physics/Homework/Project/build",
+            "name": "Project",
+            "sourceDirectory": "/Users/daizhirui/Documents/Developments/Algorithm-for-Physics/Homework/Project",
+            "targets": []
+          }
+        ]
+      }
+    ],
+    "cookie": "0.5246329312495126",
+    "inReplyTo": "codemodel",
+    "type": "reply"
+  }
+}
