@@ -1,0 +1,10 @@
+//7ising model
+
+Use:
+there are two compile types:
+make const:
+"./const" will produce the magnetization change with time
+make dif:
+"./dif" will produce the balanced average magnetization change with temperature
+
+use "make" to compile both

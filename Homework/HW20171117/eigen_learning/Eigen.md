@@ -28,7 +28,7 @@ The dimensions of matrix or vector can be changed over time.
 To define a matrix or a vector type whose dimension can be changed dynamically:
 ```cpp
 typedef Matrix<double, Dynamic, Dynamic> MatrixXd;
-typedef Matrix<int, Dynamic, 1> VectorXi; 
+typedef Matrix<int, Dynamic, 1> VectorXi;
 ```
 4. Coefficient accessors
 
@@ -53,7 +53,7 @@ std::cout << m;
 
 6. Resizing
 
-The current size of a matrix can be retrieved by **rows()**, **cols()** and **size()**. These methods return the number of rows, the number of columns and the number of coefficients, respectively. 
+The current size of a matrix can be retrieved by **rows()**, **cols()** and **size()**. These methods return the number of rows, the number of columns and the number of coefficients, respectively.
 Resizing a dynamic-size matrix is done by the **resize()** method.
 ```cpp
 #include <iostream>
@@ -232,13 +232,14 @@ using namespace std;
 int main()
 {
   Eigen::Matrix2d mat;
+  int i,j;
   mat << 1, 2,
          3, 4;
   cout << "Here is mat.sum():       " << mat.sum()       << endl;   // 元素求和
   cout << "Here is mat.prod():      " << mat.prod()      << endl;   // 元素求积
   cout << "Here is mat.mean():      " << mat.mean()      << endl;   // 元素平均
   cout << "Here is mat.minCoeff():  " << mat.minCoeff()  << endl;   // 最小元素
-  cout << "mat.minCoeff(&i, &j) returns the position" 
+  cout << "mat.minCoeff(&i, &j) returns the position"
   << '(' << i << ',' << j << ')' << endl;                   // 可以传两个指针来存该元素的位置
   cout << "Here is mat.maxCoeff():  " << mat.maxCoeff()  << endl;   // 最大元素
   cout << "Here is mat.trace():     " << mat.trace()     << endl;   // 矩阵的迹（trace）
@@ -271,7 +272,7 @@ typedef Array<double, Dynamic, Dynamic> ArrayXXd;
 typedef Array<double, 3, 3>             Array33d;
 ```
 
-3. Accessing values inside an Array: 
+3. Accessing values inside an Array:
 via **operator(i, j)**, **i** is the column index and **j** is the row index.
 
 4. Initilize an Array
@@ -323,7 +324,7 @@ int main()
 ```
 Output:
 ```cpp
-a * b = 
+a * b =
  5 12
 21 32
 ```
@@ -331,7 +332,7 @@ a * b =
 7. Other coefficient-wise operations
 
 **abs(), sqrt(), min(.)**
-**min(.)**: to construct the array whose coefficients are the minimum of the corresponding coefficients of the two given arrays. 
+**min(.)**: to construct the array whose coefficients are the minimum of the corresponding coefficients of the two given arrays.
 Example:
 ```cpp
 #include <Eigen/Dense>
@@ -342,13 +343,13 @@ int main()
 {
   ArrayXf a = ArrayXf::Random(5);
   a *= 2;
-  cout << "a =" << endl 
+  cout << "a =" << endl
        << a << endl;
-  cout << "a.abs() =" << endl 
+  cout << "a.abs() =" << endl
        << a.abs() << endl;
-  cout << "a.abs().sqrt() =" << endl 
+  cout << "a.abs().sqrt() =" << endl
        << a.abs().sqrt() << endl;
-  cout << "a.min(a.abs().sqrt()) =" << endl 
+  cout << "a.min(a.abs().sqrt()) =" << endl
        << a.min(a.abs().sqrt()) << endl;
 }
 ```
@@ -383,10 +384,10 @@ a.min(a.abs().sqrt()) =
 8. Converting between array and matrix expressions
 
 **Situation:**
-If you need to do **linear algebraic operations** such as matrix multiplication, then you should use **matrices**; if you need to do **coefficient-wise operations**, then you should use **arrays**. However, sometimes it is not that simple, but you need to use both Matrix and Array operations. 
+If you need to do **linear algebraic operations** such as matrix multiplication, then you should use **matrices**; if you need to do **coefficient-wise operations**, then you should use **arrays**. However, sometimes it is not that simple, but you need to use both Matrix and Array operations.
 
 **Solution A:**
-In that case, **you need to convert a matrix to an array or reversely**. 
+In that case, **you need to convert a matrix to an array or reversely**.
 **Matrix expressions** have an .**array()** method that 'converts' them into array expressions, so that coefficient-wise operations can be applied easily. Conversely, **array expressions** have a **.matrix()** method. As with all Eigen expression abstractions, this doesn't have any runtime cost (provided that you let your compiler optimize). **Both .array() and .matrix() can be used as rvalues and as lvalues**.
 
 **Solution B:**
@@ -465,7 +466,7 @@ int main()
   cout << "Here is now a with m copied into its central 2x2 block:" << endl
    << a << endl << endl;
   a.block(0,0,2,3) = a.block(2,1,2,3);
-  cout << "Here is now a with bottom-right 2x3 block copied into top-left 2x2 block:" 
+  cout << "Here is now a with bottom-right 2x3 block copied into top-left 2x2 block:"
   << endl << a << endl << endl;
 }
 ```
@@ -511,7 +512,7 @@ std::cout << m;
     - **Constant(value)**: sets all coefficients to value
     - **Random()**: fills the matrix or array with random coefficients
     - **Identity()**: for matrix only, set it as identity matrix
-    - **LinSpaced(size, low, high)**: only available for vectors and one-dimensional arrays; it yields a vector of the specified size whose coefficients are equally spaced between low and high. 
+    - **LinSpaced(size, low, high)**: only available for vectors and one-dimensional arrays; it yields a vector of the specified size whose coefficients are equally spaced between low and high.
     ```cpp
     ArrayXXf table(10, 4);
     table.col(0) = ArrayXf::LinSpaced(10, 0, 90);
@@ -546,7 +547,7 @@ std::cout << m;
 - **squaredNorm()**
 - **norm()**
 - **lpNorm()**: explanation:
-$$m = 
+$$m =
 \left[
 \begin{matrix}
 a & b\\
@@ -605,10 +606,10 @@ Partial reductions are reductions that can operate column- or row-wise on a Matr
         MatrixXf mat(2,4);
         mat << 1, 2, 6, 9,
                3, 1, 7, 2;
-        
+
         MatrixXf::Index   maxIndex;
         float maxNorm = mat.colwise().sum().maxCoeff(&maxIndex);
-        
+
         std::cout << "Maximum sum at position " << maxIndex << std::endl;
         std::cout << "The corresponding vector is: " << std::endl;
         std::cout << mat.col( maxIndex ) << std::endl;
@@ -616,7 +617,7 @@ Partial reductions are reductions that can operate column- or row-wise on a Matr
     }
     // output:
     // Maximum sum at position 2
-    // The corresponding vector is: 
+    // The corresponding vector is:
     // 6
     // 7
     // And its sum is is: 13
@@ -630,19 +631,19 @@ Partial reductions are reductions that can operate column- or row-wise on a Matr
     {
         Eigen::MatrixXf mat(2,4);
         Eigen::VectorXf v(2);
-        
+
         mat << 1, 2, 6, 9,
                 3, 1, 7, 2;
         v << 0,
              1;
         //add v to each column of m
         mat.colwise() += v;
-        
+
         std::cout << "Broadcasting result: " << std::endl;
         std::cout << mat << std::endl;
     }
     // Output:
-    // Broadcasting result: 
+    // Broadcasting result:
     // 1 2 6 9
     // 4 2 8 3
     ```
@@ -657,10 +658,10 @@ Partial reductions are reductions that can operate column- or row-wise on a Matr
     {
         Eigen::MatrixXf m(2,4);
         Eigen::VectorXf v(2);
-        
+
         m << 1, 23, 6, 9,
             3, 11, 7, 2;
-            
+
         v << 2,
             3;
         MatrixXf::Index index;

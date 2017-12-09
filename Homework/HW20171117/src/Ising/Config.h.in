@@ -1,0 +1,2 @@
+// the configured options and settings for ISING
+#define ISING_VERSION   @ISING_VERSION@

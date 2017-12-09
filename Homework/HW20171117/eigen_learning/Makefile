@@ -111,6 +111,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named practice6
+
+# Build rule for target.
+practice6: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 practice6
+.PHONY : practice6
+
+# fast build rule for target.
+practice6/fast:
+	$(MAKE) -f CMakeFiles/practice6.dir/build.make CMakeFiles/practice6.dir/build
+.PHONY : practice6/fast
+
+#=============================================================================
 # Target rules for targets named practice2
 
 # Build rule for target.
@@ -135,6 +148,19 @@ practice5: cmake_check_build_system
 practice5/fast:
 	$(MAKE) -f CMakeFiles/practice5.dir/build.make CMakeFiles/practice5.dir/build
 .PHONY : practice5/fast
+
+#=============================================================================
+# Target rules for targets named practice7
+
+# Build rule for target.
+practice7: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 practice7
+.PHONY : practice7
+
+# fast build rule for target.
+practice7/fast:
+	$(MAKE) -f CMakeFiles/practice7.dir/build.make CMakeFiles/practice7.dir/build
+.PHONY : practice7/fast
 
 #=============================================================================
 # Target rules for targets named practice4
@@ -310,6 +336,60 @@ practice5.cpp.s:
 	$(MAKE) -f CMakeFiles/practice5.dir/build.make CMakeFiles/practice5.dir/practice5.cpp.s
 .PHONY : practice5.cpp.s
 
+practice6.o: practice6.cpp.o
+
+.PHONY : practice6.o
+
+# target to build an object file
+practice6.cpp.o:
+	$(MAKE) -f CMakeFiles/practice6.dir/build.make CMakeFiles/practice6.dir/practice6.cpp.o
+.PHONY : practice6.cpp.o
+
+practice6.i: practice6.cpp.i
+
+.PHONY : practice6.i
+
+# target to preprocess a source file
+practice6.cpp.i:
+	$(MAKE) -f CMakeFiles/practice6.dir/build.make CMakeFiles/practice6.dir/practice6.cpp.i
+.PHONY : practice6.cpp.i
+
+practice6.s: practice6.cpp.s
+
+.PHONY : practice6.s
+
+# target to generate assembly for a file
+practice6.cpp.s:
+	$(MAKE) -f CMakeFiles/practice6.dir/build.make CMakeFiles/practice6.dir/practice6.cpp.s
+.PHONY : practice6.cpp.s
+
+practice7.o: practice7.cpp.o
+
+.PHONY : practice7.o
+
+# target to build an object file
+practice7.cpp.o:
+	$(MAKE) -f CMakeFiles/practice7.dir/build.make CMakeFiles/practice7.dir/practice7.cpp.o
+.PHONY : practice7.cpp.o
+
+practice7.i: practice7.cpp.i
+
+.PHONY : practice7.i
+
+# target to preprocess a source file
+practice7.cpp.i:
+	$(MAKE) -f CMakeFiles/practice7.dir/build.make CMakeFiles/practice7.dir/practice7.cpp.i
+.PHONY : practice7.cpp.i
+
+practice7.s: practice7.cpp.s
+
+.PHONY : practice7.s
+
+# target to generate assembly for a file
+practice7.cpp.s:
+	$(MAKE) -f CMakeFiles/practice7.dir/build.make CMakeFiles/practice7.dir/practice7.cpp.s
+.PHONY : practice7.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -318,8 +398,10 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
+	@echo "... practice6"
 	@echo "... practice2"
 	@echo "... practice5"
+	@echo "... practice7"
 	@echo "... practice4"
 	@echo "... practice3"
 	@echo "... practice1"
@@ -338,6 +420,12 @@ help:
 	@echo "... practice5.o"
 	@echo "... practice5.i"
 	@echo "... practice5.s"
+	@echo "... practice6.o"
+	@echo "... practice6.i"
+	@echo "... practice6.s"
+	@echo "... practice7.o"
+	@echo "... practice7.i"
+	@echo "... practice7.s"
 .PHONY : help
 
 

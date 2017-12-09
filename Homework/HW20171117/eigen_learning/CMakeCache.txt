@@ -180,6 +180,12 @@ CMAKE_STRIP:FILEPATH=/Applications/Xcode.app/Contents/Developer/Toolchains/Xcode
 CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 
 //Value Computed by CMake
+eigen_learning0_BINARY_DIR:STATIC=/Users/daizhirui/Documents/Developments/Algorithm-for-Physics/Homework/HW20171117/eigen_learning
+
+//Value Computed by CMake
+eigen_learning0_SOURCE_DIR:STATIC=/Users/daizhirui/Documents/Developments/Algorithm-for-Physics/Homework/HW20171117/eigen_learning
+
+//Value Computed by CMake
 eigen_learning_BINARY_DIR:STATIC=/Users/daizhirui/Documents/Developments/Algorithm-for-Physics/Homework/HW20171117/eigen_learning
 
 //Value Computed by CMake

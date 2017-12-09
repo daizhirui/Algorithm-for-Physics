@@ -1,0 +1,46 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/daizhirui/Documents/Developments/Algorithm-for-Physics/Homework/HW20171117/src/AutoSimulation/AutoSimulation.cpp
+iostream
+-
+sstream
+-
+terminal_IO.h
+/Users/daizhirui/Documents/Developments/Algorithm-for-Physics/Homework/HW20171117/src/AutoSimulation/terminal_IO.h
+STATUS_CODE.h
+/Users/daizhirui/Documents/Developments/Algorithm-for-Physics/Homework/HW20171117/src/AutoSimulation/STATUS_CODE.h
+cstdlib
+-
+
+/Users/daizhirui/Documents/Developments/Algorithm-for-Physics/Homework/HW20171117/src/AutoSimulation/STATUS_CODE.h
+
+/Users/daizhirui/Documents/Developments/Algorithm-for-Physics/Homework/HW20171117/src/AutoSimulation/terminal_IO.cpp
+iostream
+-
+fstream
+-
+sstream
+-
+string
+-
+unistd.h
+-
+getopt.h
+-
+terminal_IO.h
+/Users/daizhirui/Documents/Developments/Algorithm-for-Physics/Homework/HW20171117/src/AutoSimulation/terminal_IO.h
+STATUS_CODE.h
+/Users/daizhirui/Documents/Developments/Algorithm-for-Physics/Homework/HW20171117/src/AutoSimulation/STATUS_CODE.h
+cstdlib
+-
+
+/Users/daizhirui/Documents/Developments/Algorithm-for-Physics/Homework/HW20171117/src/AutoSimulation/terminal_IO.h
+string
+-
+

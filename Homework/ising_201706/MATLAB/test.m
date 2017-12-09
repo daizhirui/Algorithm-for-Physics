@@ -1,0 +1,1 @@
+EnergyStatistics=EnergyStatistics(12,1,12,DataTable);
