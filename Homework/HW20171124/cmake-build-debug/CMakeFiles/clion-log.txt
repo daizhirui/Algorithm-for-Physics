@@ -1,0 +1,4 @@
+/Applications/CLion.app/Contents/bin/cmake/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /Users/daizhirui/Documents/Developments/Algorithm-for-Physics/Homework/HW20171124
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /Users/daizhirui/Documents/Developments/Algorithm-for-Physics/Homework/HW20171124

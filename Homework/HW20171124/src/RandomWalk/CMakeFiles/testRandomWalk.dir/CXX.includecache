@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/daizhirui/Documents/Developments/Algorithm-for-Physics/Homework/HW20171124/src/MyVector/MyVector.h
+vector
+-
+
+/Users/daizhirui/Documents/Developments/Algorithm-for-Physics/Homework/HW20171124/src/RandomWalk/RandomWalk.h
+../MyVector/MyVector.h
+/Users/daizhirui/Documents/Developments/Algorithm-for-Physics/Homework/HW20171124/src/MyVector/MyVector.h
+vector
+-
+
+/Users/daizhirui/Documents/Developments/Algorithm-for-Physics/Homework/HW20171124/src/RandomWalk/testRandomWalk.cpp
+iostream
+-
+fstream
+-
+RandomWalk.h
+/Users/daizhirui/Documents/Developments/Algorithm-for-Physics/Homework/HW20171124/src/RandomWalk/RandomWalk.h
+
