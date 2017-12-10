@@ -14,23 +14,24 @@ int main(int argc, char *argv[])
     json_in(v);
 
     StructComp comp(v);
+    Matrix<double, 6, 3> points = comp.max_triangle();
+    StructComp quick_comp(points);
 
     if (v.auto_pair)
     {
-        Matrix<double, 6, 3> points = comp.max_triangle();
-        StructComp quick_comp(points);
         Permutation permutation_generator(3, 3);
         vector<int> perm;
         vector<int> best_perm;
-        double min_eigenvalue = 0;
-        Vector4d best_eigenvector;
+        int index;
+        quick_comp.cal_all();
+        double min_eigenvalue = quick_comp.eigen_values.minCoeff(&index);
+        Vector4d    best_eigenvector = quick_comp.eigen_vectors.col(index);
         while ((perm = permutation_generator.pop()).size())
         {
             for (int i = 0; i < 3; i++)
                 quick_comp.struct2.row(i) = points.row(3 + perm[i]);
             quick_comp.update_matrix();
             quick_comp.cal_eigenvalues();
-            int index;
             double temp_min_eigenvalue = quick_comp.eigen_values.minCoeff(&index);
             if (temp_min_eigenvalue < min_eigenvalue)
             {
@@ -56,8 +57,16 @@ int main(int argc, char *argv[])
     else
     {
         ofs << "Molecule data file = " << v.in_filename << endl
-            << "         Auto pair = " << (v.auto_pair ? "ON" : "OFF") << endl
-            << "-----------------------------------------------" << endl
+            << "         Auto pair = " << (v.auto_pair ? "ON" : "OFF") << endl;
+        if(v.auto_pair)
+        {
+            ofs << "Pair Result:" << endl
+                << "Molecule1: " << endl
+                << quick_comp.struct1 << endl
+                << "Molecule2: " << endl
+                << quick_comp.struct2 << endl;
+        }
+        ofs << "-----------------------------------------------" << endl
             << "The structure of molecule1:" << endl
             << comp.struct1 << endl
             << "-----------------------------------------------" << endl
@@ -83,6 +92,12 @@ int main(int argc, char *argv[])
          << endl
          << "rms = " << endl
          << comp.rms << endl
+         << endl
+         << "strict rms = " << endl
+         << comp.strict_rms(comp.eigen_vectors.col(0)) << endl
+         << comp.strict_rms(comp.eigen_vectors.col(1)) << endl
+         << comp.strict_rms(comp.eigen_vectors.col(2)) << endl
+         << comp.strict_rms(comp.eigen_vectors.col(3)) << endl
          << endl
          << "eigen_values = " << endl
          << comp.eigen_values << endl

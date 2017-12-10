@@ -148,7 +148,7 @@ double StructComp::cal_triangle_area(const Matrix3d &points)
 Matrix<double, 6, 3> StructComp::max_triangle()
 {
     Combination combination_generator(atom_num, 3); // to generate all combinations
-    std::vector<int> combination;   // to store the combination
+    std::vector<int> combination;                   // to store the combination
     double area = 0.0;
     double temp_area = 0.0;
     Matrix<double, 6, 3> result;
@@ -235,4 +235,22 @@ void StructComp::pair()
     Matrix<double, Dynamic, 3> temp = struct2;
     for (int i = 0; i < atom_num; i++)
         struct2.row(i) = temp.row(pair_list[i]);
+}
+
+double StructComp::strict_rms(Vector4d q)
+{
+    double result = 0.0;
+    double q1, q2, q3, q4;
+    q1 = q(0);
+    q2 = q(1);
+    q3 = q(2);
+    q4 = q(3);
+    for (int i = 0; i < atom_num; i++)
+    {
+        result += mysquare(q2 * struct_minus(i, 0) + q3 * struct_minus(i, 1) + q4 * struct_minus(i, 2));
+        result += mysquare(q1 * struct_minus(i, 0) + q3 * struct_plus(i, 2) - q4 * struct_plus(i, 1));
+        result += mysquare(q1 * struct_minus(i, 1) + q4 * struct_plus(i, 0) - q2 * struct_plus(i, 2));
+        result += mysquare(q1 * struct_minus(i, 2) + q2 * struct_plus(i, 1) - q3 * struct_plus(i, 0));
+    }
+    return std::sqrt(result / atom_num);
 }

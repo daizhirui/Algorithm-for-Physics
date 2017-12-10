@@ -35,4 +35,5 @@ class StructComp
     Matrix<double, 6, 3> max_triangle();
     void rotate_struct1(Vector4d vect);
     void pair();
+    double strict_rms(Vector4d);
 };
