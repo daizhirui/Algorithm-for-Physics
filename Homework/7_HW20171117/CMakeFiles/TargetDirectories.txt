@@ -1,0 +1,10 @@
+/Users/daizhirui/Documents/Developments/Algorithm-for-Physics/Homework/7_HW20171117/CMakeFiles/rebuild_cache.dir
+/Users/daizhirui/Documents/Developments/Algorithm-for-Physics/Homework/7_HW20171117/CMakeFiles/edit_cache.dir
+/Users/daizhirui/Documents/Developments/Algorithm-for-Physics/Homework/7_HW20171117/src/CMakeFiles/rebuild_cache.dir
+/Users/daizhirui/Documents/Developments/Algorithm-for-Physics/Homework/7_HW20171117/src/CMakeFiles/edit_cache.dir
+/Users/daizhirui/Documents/Developments/Algorithm-for-Physics/Homework/7_HW20171117/src/Ising/CMakeFiles/rebuild_cache.dir
+/Users/daizhirui/Documents/Developments/Algorithm-for-Physics/Homework/7_HW20171117/src/Ising/CMakeFiles/edit_cache.dir
+/Users/daizhirui/Documents/Developments/Algorithm-for-Physics/Homework/7_HW20171117/src/Ising/CMakeFiles/ISING.dir
+/Users/daizhirui/Documents/Developments/Algorithm-for-Physics/Homework/7_HW20171117/src/AutoSimulation/CMakeFiles/rebuild_cache.dir
+/Users/daizhirui/Documents/Developments/Algorithm-for-Physics/Homework/7_HW20171117/src/AutoSimulation/CMakeFiles/edit_cache.dir
+/Users/daizhirui/Documents/Developments/Algorithm-for-Physics/Homework/7_HW20171117/src/AutoSimulation/CMakeFiles/AutoSimulation.dir

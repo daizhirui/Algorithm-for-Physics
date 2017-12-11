@@ -1,9 +1,0 @@
-/Users/daizhirui/Documents/Developments/Algorithm-for-Physics/Homework/HW20171201/CMakeFiles/rebuild_cache.dir
-/Users/daizhirui/Documents/Developments/Algorithm-for-Physics/Homework/HW20171201/CMakeFiles/edit_cache.dir
-/Users/daizhirui/Documents/Developments/Algorithm-for-Physics/Homework/HW20171201/src/CMakeFiles/rebuild_cache.dir
-/Users/daizhirui/Documents/Developments/Algorithm-for-Physics/Homework/HW20171201/src/CMakeFiles/edit_cache.dir
-/Users/daizhirui/Documents/Developments/Algorithm-for-Physics/Homework/HW20171201/src/CMakeFiles/SingleBrown.dir
-/Users/daizhirui/Documents/Developments/Algorithm-for-Physics/Homework/HW20171201/src/MyVector/CMakeFiles/rebuild_cache.dir
-/Users/daizhirui/Documents/Developments/Algorithm-for-Physics/Homework/HW20171201/src/MyVector/CMakeFiles/edit_cache.dir
-/Users/daizhirui/Documents/Developments/Algorithm-for-Physics/Homework/HW20171201/src/MyVector/CMakeFiles/testMyVector.dir
-/Users/daizhirui/Documents/Developments/Algorithm-for-Physics/Homework/HW20171201/src/MyVector/CMakeFiles/MyVector.dir

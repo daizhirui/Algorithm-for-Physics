@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/daizhirui/Documents/Developments/Algorithm-for-Physics/Homework/10_HW20171208/src/MyVector/MyVector.h
+vector
+-
+
+/Users/daizhirui/Documents/Developments/Algorithm-for-Physics/Homework/10_HW20171208/src/MyVector/testMyVector.cpp
+iostream
+-
+vector
+-
+MyVector.h
+/Users/daizhirui/Documents/Developments/Algorithm-for-Physics/Homework/10_HW20171208/src/MyVector/MyVector.h
+

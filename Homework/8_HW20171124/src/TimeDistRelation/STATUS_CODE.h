@@ -1,0 +1,4 @@
+#define STATUS_OK           0x00
+#define STATUS_PARAM_ERROR  0x01
+#define STATUS_RETURN_ERROR 0x02
+#define STATUS_MEMORY_ERROR 0x03
