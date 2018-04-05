@@ -1,0 +1,298 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2004-11-03 17:26+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: src/interface.c:122 src/interface.c:1709
+msgid "SeeDNA 1.0"
+msgstr ""
+
+#: src/interface.c:135
+msgid "_File"
+msgstr ""
+
+#: src/interface.c:161
+msgid "_Configure"
+msgstr ""
+
+#: src/interface.c:172
+msgid "_Help"
+msgstr ""
+
+#: src/interface.c:179
+msgid "_About"
+msgstr ""
+
+#: src/interface.c:208
+msgid "LOCUS"
+msgstr ""
+
+#: src/interface.c:213
+msgid "Description"
+msgstr ""
+
+#: src/interface.c:218
+msgid "Format"
+msgstr ""
+
+#: src/interface.c:223
+msgid "File Path"
+msgstr ""
+
+#: src/interface.c:247
+msgid ""
+"This window will display the information\n"
+" of selected sequence."
+msgstr ""
+
+#: src/interface.c:249
+msgid "Sequence Information"
+msgstr ""
+
+#: src/interface.c:264
+msgid "1D Histogram"
+msgstr ""
+
+#: src/interface.c:269
+msgid "2D Portrait"
+msgstr ""
+
+#: src/interface.c:274
+msgid "Drawing Panel"
+msgstr ""
+
+#: src/interface.c:315 src/interface.c:1221
+msgid "Color Code"
+msgstr ""
+
+#: src/interface.c:330
+msgid "None"
+msgstr ""
+
+#: src/interface.c:337
+msgid "Apply"
+msgstr ""
+
+#: src/interface.c:344 src/interface.c:1178
+msgid "Randomization"
+msgstr ""
+
+#: src/interface.c:359
+msgid "Original"
+msgstr ""
+
+#: src/interface.c:366
+msgid "Complement"
+msgstr ""
+
+#: src/interface.c:373
+msgid "Both"
+msgstr ""
+
+#: src/interface.c:380
+msgid "Sequence"
+msgstr ""
+
+#: src/interface.c:403
+msgid "K = "
+msgstr ""
+
+#: src/interface.c:409
+msgid "K Tuples"
+msgstr ""
+
+#: src/interface.c:431
+msgid ""
+"Advanced\n"
+" Settings"
+msgstr ""
+
+#: src/interface.c:436
+msgid "Settings"
+msgstr ""
+
+#: src/interface.c:619
+msgid "The context of the current mouse point."
+msgstr ""
+
+#: src/interface.c:701
+msgid "COMPARE"
+msgstr ""
+
+#: src/interface.c:723 src/interface.c:870 src/interface.c:1024
+msgid "EXPORT"
+msgstr ""
+
+#: src/interface.c:823
+msgid "The context of the point."
+msgstr ""
+
+#: src/interface.c:837
+msgid "Press Mouse Left Button to show the count value of current point."
+msgstr ""
+
+#: src/interface.c:982
+msgid ""
+"-1.0       -0.5          -0.1         -0.01          0.0        "
+"+0.01         +0.1        +0.5         +1.0"
+msgstr ""
+
+#: src/interface.c:1005
+msgid "The Context about the comparation result."
+msgstr ""
+
+#: src/interface.c:1118
+msgid "Advanced Settings"
+msgstr ""
+
+#: src/interface.c:1144
+msgid ""
+" Randomization is carried out with respect to the whole \n"
+"DNA sequence. You may choose how many times (X) \n"
+"it is applied to the sequence."
+msgstr ""
+
+#: src/interface.c:1157
+msgid "1"
+msgstr ""
+
+#: src/interface.c:1158
+msgid "2"
+msgstr ""
+
+#: src/interface.c:1159 src/interface.c:1284
+msgid "4"
+msgstr ""
+
+#: src/interface.c:1160 src/interface.c:1285
+msgid "8"
+msgstr ""
+
+#: src/interface.c:1161
+msgid "10"
+msgstr ""
+
+#: src/interface.c:1162
+msgid "20"
+msgstr ""
+
+#: src/interface.c:1163
+msgid "40"
+msgstr ""
+
+#: src/interface.c:1172
+msgid "X"
+msgstr ""
+
+#: src/interface.c:1207
+msgid "Higelight Small Counts"
+msgstr ""
+
+#: src/interface.c:1214
+msgid "Auto-Balanced Color Range"
+msgstr ""
+
+#: src/interface.c:1247
+msgid ""
+"All sequence lengths are rescaled to \n"
+"one million bases for comparison."
+msgstr ""
+
+#: src/interface.c:1249
+msgid "Yes"
+msgstr ""
+
+#: src/interface.c:1256
+msgid "No"
+msgstr ""
+
+#: src/interface.c:1263
+msgid "Normalization"
+msgstr ""
+
+#: src/interface.c:1286
+msgid "16"
+msgstr ""
+
+#: src/interface.c:1295
+msgid "In (0.0 ~ 1.0)"
+msgstr ""
+
+#: src/interface.c:1301
+msgid "Difference Area Number"
+msgstr ""
+
+#: src/interface.c:1307
+msgid "Difference Precision"
+msgstr ""
+
+#: src/interface.c:1312
+msgid "Comparison Method"
+msgstr ""
+
+#: src/interface.c:1469
+msgid "Comparation"
+msgstr ""
+
+#: src/interface.c:1494
+msgid "OK"
+msgstr ""
+
+#: src/interface.c:1516
+msgid "Cancel"
+msgstr ""
+
+#: src/interface.c:1545 src/interface.c:1577
+msgid "Portrait ID"
+msgstr ""
+
+#: src/interface.c:1551 src/interface.c:1571
+msgid "Portrait Description"
+msgstr ""
+
+#: src/interface.c:1556
+msgid "Target Portrait"
+msgstr ""
+
+#: src/interface.c:1597
+msgid "Current Portrait"
+msgstr ""
+
+#: src/interface.c:1691
+msgid "About SeeDNA"
+msgstr ""
+
+#: src/interface.c:1714
+msgid ""
+"SeeDNA displays the K-string composition of a DNA \n"
+"sequences in one- and two-dimensional histograms."
+msgstr ""
+
+#: src/interface.c:1720
+msgid "(c) 2003 Shen,Lee,Zhang,Hao"
+msgstr ""
+
+#: src/interface.c:1762 src/interface.c:1767
+msgid "Error"
+msgstr ""
+
+#: src/interface.c:1764
+msgid "WARNING"
+msgstr ""
+
+#: src/support.c:90 src/support.c:114
+#, c-format
+msgid "Couldn't find pixmap file: %s"
+msgstr ""

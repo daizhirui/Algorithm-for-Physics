@@ -1,0 +1,47 @@
+Author List and References:
+===========================
+
+The SeeDNA program was written by SHEN Junjie, Computer Science,
+Zhejiang University, in 2003/2004 using the GTK+ graphic package
+for Linux systems at the suggestion of HAO Bailin.
+
+SeeDNA is an essential improvement and extension of an early program
+called seeDNA written by Hong-yi Cheng (Maggie), Bailin HAO and Shuyu
+ZHANG in 1997/1998 for UNIX Workstations using the Xlib, XToolkit and
+Ethena Package included in the X11 Release 6 (X11R6) of MIT. The source
+code of the old seeDNA is still available at request to HAO Bailin at
+mailto: hao@itp.ac.cn
+
+The algorithm of drawing a 2-dimensional histogram to visualize the
+K-string composition was described in:
+
+B. -L. Hao, H. C. Lee, S.-Y. Zhang, "Fractals related to long DNA
+sequences and bacterial complete genomes", Chaos, Solitons and
+Fractals 11 (2000) 825-836.
+
+The nature of regular patterns seen in many "portraits" of bacteria
+was analyzed in a series of papers by HAO Bailin, Xie Huimin,
+YU Zuguo, and CHEN Guoyi and reviewed in:
+
+Bailin Hao, "Fractals from genomes: exact solutions of a biology-inspired
+           problem", Physica A282 (2000) 225-246.
+
+The 1-dimensional histograms were described in:
+
+Bailin Hao, "`Spatial-temporal' patterns in prokaryote genomes", Int. J.
+Bifurcation and Chaos, 12 (2002) 2625-2630.
+
+The unexpected fine structures in the 1D histograms of some randomized
+bacterial genomes with biased G + C content was discovered and explained in:
+
+Huimin Xie, Bailin Hao, "Visualization of K-tuple distribution in
+prokaryote complete genomes and their randomized counterparts", in
+Computer Systems Bioinformatics Conference CSB2002 Proceedings,i
+IEEE Computer Society, Los Alamitos, California, pp. 31-42.
+
+If SeeDNA is being used in any publication please kindly cite:
+ 
+Junjie Shen, Shuyu Zhang, Hoong-Chien Lee and Bailin Hao. (2004)
+SeeDNA: visualization of K-string content of long DNA sequences
+and their randomized counterparts. Journal and page numbers will be
+added later.

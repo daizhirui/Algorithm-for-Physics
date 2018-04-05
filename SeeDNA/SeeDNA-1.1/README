@@ -1,0 +1,92 @@
+Text Files in This Package:
+===========================
+
+1. README: this file, mainly the installation instruction for generating
+           SeeDNA on a Red Hat Linux system.
+
+2. AUTHORS: author and reference list.
+
+3. INSTALL: the original FSF installation instruction.
+
+4. NEWS: update history of SeeDNA
+
+5. LICENSE: the GNU Public License
+
+Installation Instructions for SeeDNA ver.1.0
+============================================
+
+SeeDNA is a program to visualize the K-string composition of long DNA sequences
+including complete chromosomes or genomes. It is written in C using the GTK+
+graphic package for LINUX systems.
+
+Before installing SeeDNA one should ensure that the GTK+ package (Version
+2.0 or higher) has already been installed. If not, download it from
+http://www.gtk.org
+and follow the instructions therein.
+
+To install and run SeeDNA in a Red Hat 9 environment follow the steps below:
+
+1. Download the SeeDNA package from
+   http://www.itp.ac.cn/~hao/SeeDNA-1.0.tar.gz
+
+2. Enter the directory where SeeDNA-1.0.tar.gz resides.
+
+3. Unzip the above file by issuing command:
+   gunzip SeeDNA-1.0.tar.gz
+   or equivalently:
+   gzip -d SeeDNA-1.0.tar.gz
+
+4. Untar the unzipped file by issuing command:
+   tar xvf SeeDNA-1.0.tar
+   A subdirectory SeeDNA-1.0 will be created.
+
+5. Change to the directory by issuing command:
+   cd SeeDNA-1.0
+   and then configure the pac kage to the system by typing command: 
+   ./configure'
+   If 'csh' shell is being used on an old version of System V, one might
+   need to type
+   sh ./configure
+   instead to prevent `csh' from trying to execute 'configure' itself.
+
+   Running 'configure' takes a while.  While running, it prints some
+   messages telling which features it is checking for.
+
+6. Type `make' to compile the package.
+
+7. Type `make install' to install the programs and any data files and
+   documentation
+   
+8. You can remove the program binaries and object files from the
+   source code directory by typing `make clean'.  To also remove the
+   files that `configure' created (so you can compile the package for
+   a different kind of computer), type `make distclean'.  There is
+   also a `make maintainer-clean' target, but that is intended mainly
+   for the package's developers.  If you use it, you may have to get
+   all sorts of other programs in order to regenerate files that came
+   with the distribution.
+
+9. After finishing the steps above, one can now run it by typing
+   SeeDNA &
+   Or if you did not 'make install', you can run it in the sub directory 
+   'src' by typing
+   ./SeeDNA &
+
+   While SeeDNA is running follow the menus in the self-explanatory
+graphic user interface. One must first open one or more DNA sequence files by
+pressing 'Ctrl - O' or choosing menu item 'File' then 'Open'. The file format
+supported by SeeDNA is GenBank and FASTA, if the format is not correctt,
+SeeDNA will issue an alert.
+
+   After the files have been opened, choose one in the displayed list.
+Before you draw a two-dimensional (portrait) or a one-dimensional histogram,
+one can adjust some parameters in Settings and/or Advanced Settings.
+
+   To learn more what a portrait or histogram means please read the information
+in AUTHORS and papers cited therein.
+
+   Enjoy seeing K-string distribution in DNA.
+
+   Please send bug info and suggestion to Bailin Hao:
+   mailto: hao@itp.ac.cn
+
